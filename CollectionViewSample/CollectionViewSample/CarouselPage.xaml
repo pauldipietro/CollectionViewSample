@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CollectionViewSample.CarouselPage"
+             Title="Carousel Page">
+    <ContentPage.Content>
+        <StackLayout>
+            <CarouselView x:Name="CV" ItemsSource="{Binding People}" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="10">
+                <CarouselView.ItemsLayout>
+                    <GridItemsLayout Orientation="Horizontal" SnapPointsAlignment="Center" SnapPointsType="Mandatory"/>
+                </CarouselView.ItemsLayout>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="LightGray" CornerRadius="3" HasShadow="False">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="75"/>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Image Grid.Column="0" Grid.Row="0" Source="person" VerticalOptions="Start"/>
+                                <StackLayout Grid.Column="1" Grid.Row="1" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand">
+                                    <Label Text="{Binding}" FontSize="24" HorizontalOptions="EndAndExpand"/>
+                                    <Label Text="Company Address" HorizontalOptions="EndAndExpand"/>
+                                    <Label Text="City, State" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <StackLayout VerticalOptions="StartAndExpand">
+                <Label Text="Scroll the CarouselView above or use the slider below!" HorizontalOptions="CenterAndExpand"/>
+                <Slider Minimum="0" Maximum="25" ValueChanged="Slider_ValueChanged" MinimumTrackColor="#01579b" MaximumTrackColor="#01579b" ThumbColor="#9575cd"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

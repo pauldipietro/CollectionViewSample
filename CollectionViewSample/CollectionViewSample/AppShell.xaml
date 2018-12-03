@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:collectionviewsample="clr-namespace:CollectionViewSample"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="CollectionViewSample.AppShell"
+             ios:Page.UseSafeArea="True"
+             FlyoutBehavior="Disabled"
+             Shell.ShellTabBarBackgroundColor="#42a5f5"
+             Shell.ShellTabBarForegroundColor="#e3f2fd"
+             Shell.ShellTabBarUnselectedColor="#e1f5fe"
+             Shell.ShellTabBarTitleColor="#ffffff">
+    <ShellItem>
+        <ShellSection Title="Basic" Icon="list">
+            <ShellContent>
+                <collectionviewsample:BasicListPage/>
+            </ShellContent>
+        </ShellSection>
+        <ShellSection Title="Grid" Icon="grid">
+            <ShellContent>
+                <collectionviewsample:GridListPage/>
+            </ShellContent>
+        </ShellSection>
+        <ShellSection Title="Carousel" Icon="carousel">
+            <ShellContent>
+                <collectionviewsample:CarouselPage/>
+            </ShellContent>
+        </ShellSection>
+        <ShellSection Title="Empty" Icon="empty">
+            <ShellContent>
+                <collectionviewsample:EmptyPage/>
+            </ShellContent>
+        </ShellSection>
+    </ShellItem>
+</Shell>

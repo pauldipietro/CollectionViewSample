@@ -1,0 +1,16 @@
+Components
+packages
+Resource.designer.cs
+
+.vs
+bin
+obj
+
+*.pidb
+*.userprefs
+*.swp
+*.DS_Store
+*.nib
+*.suo
+*.user
+*.pfx
