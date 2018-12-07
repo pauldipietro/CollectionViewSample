@@ -45,6 +45,7 @@ namespace CollectionViewSample
                 "Zack"
             };
             CV.BindingContext = this;
+            CV.ItemsLayout = new ListItemsLayout(ItemsLayoutOrientation.Horizontal);
         }
     }
 }
