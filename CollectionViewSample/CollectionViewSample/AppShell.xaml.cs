@@ -16,5 +16,18 @@ namespace CollectionViewSample
         {
             InitializeComponent();
         }
+
+        void Handle_Navigating(object sender, Xamarin.Forms.ShellNavigatingEventArgs e)
+        {
+            if ((Device.RuntimePlatform == "iOS") && e.Target.Location.AbsolutePath.IndexOf("carousel") > -1)
+            {
+                (App.Current.MainPage as Shell).DisplayAlert(
+                    title: "Not Yet!",
+                    message: "iOS doesn't yet support CarouselView.",
+                    cancel: "Okay"
+                );
+                e.Cancel();
+            }
+        }
     }
 }

@@ -97,63 +97,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\basic.imageset\list.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\basic.imageset\list1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\basic.imageset\list2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\carousel.imageset\carousel.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\carousel.imageset\carousel1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\carousel.imageset\carousel2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\empty.imageset\empty.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\empty.imageset\empty1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\empty.imageset\empty2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\grid.imageset\grid.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\grid.imageset\grid1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\grid.imageset\grid2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\basic.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\carousel.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\grid.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\empty.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\person.imageset\person4.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\person.imageset\person5.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\person.imageset\person6.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
@@ -210,12 +153,18 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\CollectionViewSample\CollectionViewSample.csproj">
-      <Project>{93E8E793-43C2-45E0-A43F-E8D72D4FA40D}</Project>
+      <Project>{382B0BCC-F461-4C2E-93C3-0786CAFDC619}</Project>
       <Name>CollectionViewSample</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\carousel.png" />
+    <BundleResource Include="Resources\carousel%402x.png" />
+    <BundleResource Include="Resources\carousel%403x.png" />
+    <BundleResource Include="Resources\empty%402x.png" />
+    <BundleResource Include="Resources\empty%403x.png" />
+    <BundleResource Include="Resources\grid%402x.png" />
+    <BundleResource Include="Resources\grid%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\grid.png" />
